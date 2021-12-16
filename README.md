@@ -166,8 +166,6 @@ See unit tests for detailed examples of usage.
 
 ## Limitations
 
-* No support for parameters in Intersection or Union types (```val t: X|Y``` or ```val u: X&Y```). This is because union/intersection types don't appear to be implemented as full classes in Scala and we haven't yet figured out this would work in scala-reflection.
-
 * The entire serialized RType tree (incl. any nested RTypes) must not exceed 64K bytes. This is so that it will fit into a JVM Annotation.  (If this becomes a frequent show-stopper, there may be a way to extend this limitation, but we have no desire to prematurely over-engineer.  Until we learn otherwise, 64K seems a reasonable amount.)
 
 
